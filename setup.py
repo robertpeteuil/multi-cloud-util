@@ -30,7 +30,7 @@ INSTALL_REQUIRES = ['apache-libcloud >= 2.0.0',
 EXTRAS_REQUIRE = {
     ":python_full_version<'2.7.9'": [
         "requests >=2.5.1,<2.23.0",
-        "certifi <= 2015.9.6.2",
+        "certifi < 2019.6.17.0",
         "pyOpenSSL>=17.0.0",
         "lxml>=3.8",
         "cssselect>=1.0.1",
@@ -48,7 +48,7 @@ if int(setuptools.__version__.split(".", 1)[0]) < 18:
     # For legacy setuptools + sdist.
     if sys.version_info[0:3] <= (2, 7, 8):
         INSTALL_REQUIRES.append("requests >=2.5.1,<2.23.0")
-        INSTALL_REQUIRES.append("certifi <= 2015.9.6.2")
+        INSTALL_REQUIRES.append("certifi < 2019.6.17.0")
         INSTALL_REQUIRES.append("pyOpenSSL>=17.0.0")
         INSTALL_REQUIRES.append("lxml>=3.8")
         INSTALL_REQUIRES.append("cssselect>=1.0.1")
